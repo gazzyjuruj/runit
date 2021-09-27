@@ -1,6 +1,8 @@
-sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
-git clone https://github.com/xmrig/xmrig.git
-mkdir xmrig/build && cd xmrig/build
-cmake ..
-make -j$(nproc)
-./xmrig -o stratum+tcp://scryptn2.mine.zergpool.com:3435 -u dgb1qqrpgpansa7ktrvphwqwwgr8g62c9fc8xa8dhqd -p c=DGB -k
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.8.0/SRBMiner-Multi-0-8-0-Linux.tar.xz
+tar xf SRBMiner-Multi-0-8-0-Linux.tar.xz
+cd SRBMiner-Multi-0-8-0
+while [ 1 ]; do
+      ./guided-setup.sh
+      ./start_dgb.sh
+      sleep 0
+done
